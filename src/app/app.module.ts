@@ -9,12 +9,19 @@ import { appRoutes } from './routes';
 import { LoginService } from './service/loginservice';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { LayoutComponent } from './layout/layout.component';
+import { HeaderComponent } from './layout/components/header/header.component';
+import { SidebarComponent } from './layout/components/sidebar/sidebar.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    LayoutComponent,
+    HeaderComponent,
+    SidebarComponent
   ],
   imports: [
     HttpClientModule,
